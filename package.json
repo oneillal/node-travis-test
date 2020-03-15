@@ -2,7 +2,7 @@
   "name": "test-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://slavabez.github.io/medium-test-app/",
+  "homepage": "https://oneillal.github.io/node-travis-test/",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
