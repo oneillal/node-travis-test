@@ -9,13 +9,17 @@ new Docute({
       link: '/'
     },
     {
+      title: 'Links',
+      link: '/about'
+    },
+    {
       title: 'About',
       link: '/about'
     }
   ],
   sidebar: [
     {
-      title: 'Guide',
+      title: 'Docs',
       links: [
         {
           title: 'Introduction',
