@@ -1,3 +1,10 @@
+language: node_js
+
+install: 
+
+script:
+  - date
+
 deploy:
  provider: pages
  skip_cleanup: true
