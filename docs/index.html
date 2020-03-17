@@ -1,127 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE >
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>IBP - Bundled Payments Data Pipeline</title>
-    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>My Docs</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/docute@4/dist/docute.css"
+    />
   </head>
+
   <body>
     <div id="docute"></div>
     <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
-    <script>
-      new Docute({
-        target: '#docute',
-        nav: [
-    {
-      title: 'Home',
-      link: '/'
-    }
-  ],
-  sidebar: [
-    {
-      title: 'Guide',
-      children: [
-        {
-          title: 'Introduction',
-          link: '/'
-        },
-        {
-          title: 'Customization',
-          link: '/guide/customization'
-        },
-        {
-          title: 'Markdown Features',
-          link: '/guide/markdown-features'
-        },
-        {
-          title: 'Use Vue in Markdown',
-          link: '/guide/use-vue-in-markdown'
-        },
-        {
-          title: 'Internationalization',
-          link: '/guide/internationalization'
-        },
-        {
-          title: 'Plugin',
-          link: '/guide/plugin'
-        },
-        {
-          title: 'Deployment',
-          link: '/guide/deployment'
-        }
-      ]
-    },
-    {
-      title: 'Advanced',
-      children: [
-        {
-          title: 'Use With Bundlers',
-          link: '/guide/use-with-bundlers'
-        },
-        {
-          title: 'Offline Support',
-          link: '/guide/offline-support'
-        }
-      ]
-    },
-    {
-      title: 'References',
-      children: [
-        {
-          title: 'Options',
-          link: '/options'
-        },
-        {
-          title: 'Built-in Components',
-          link: '/builtin-components'
-        },
-        {
-          title: 'Plugin API',
-          link: '/plugin-api'
-        }
-      ]
-    },
-    {
-      title: 'Credits',
-      link: '/credits'
-    }
-  ],
-  componentMixins: [
-    {
-      data() {
-        return {
-          builtinLanguages: prismLanguages.builtin,
-          deps: __DEPS__
-        }
-      },
-      methods: {
-        insertCustomFontsCSS() {
-          const ID = 'custom-fonts-css'
-          const existing = document.getElementById(ID)
-          if (existing) {
-            existing.parentNode.removeChild(existing)
-          } else {
-            const style = document.createElement('style')
-            style.id = ID
-            style.textContent = `
-            /* Import desired font from Google fonts */
-            @import url('https://fonts.googleapis.com/css?family=Lato');
-            /* Apply the font to body (to override the default one) */
-            body {
-              font-family: Lato, sans-serif;
-            }
-            `
-            document.head.appendChild(style)
-          }
-        }
-      },
-      components: {
-        ColorBox
-      }
-    }
-  ]
-      })
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
