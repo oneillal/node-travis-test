@@ -9,6 +9,11 @@
 # production
 /build
 
+#jekyll
+docs/_site
+docs/.jekyll-cache
+docs/.sass-cache
+
 # misc
 .DS_Store
 .env
